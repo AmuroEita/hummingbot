@@ -38,6 +38,8 @@ class SpotPerpetualArbitrageStrategy(StrategyPyBase):
     For a given order amount, the strategy checks for price discrepancy between buy and sell price on the 2 exchanges.
     Since perpetual contract requires closing position before profit is realised, there are 2 stages to this arbitrage
     operation - first to open and second to close.
+
+    这个策略介入现货和永续交易所之间的套利。对于给定的订单金额，该策略检查两个交易所之间买卖价格之间的价格差异。由于永续合约要求在利润实现之前关闭头寸，因此这种套利操作分为两个阶段 - 首先是开仓，其次是平仓。
     """
 
     @classmethod
